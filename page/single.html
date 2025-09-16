@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="font-sans">
+
+    <header class="mx-auto container">
+        <!-- Top blue bar (Desktop only) -->
+        <div class="hidden md:flex bg-gradient-to-r from-blue-600 to-blue-800 text-white text-sm px-6 py-2 justify-between items-center">
+        <div class="flex space-x-6">
+            <a href="#" class="hover:underline">Start Here</a>
+            <a href="#" class="hover:underline">Demos</a>
+            <a href="#" class="hover:underline">Contact</a>
+            <a href="#" class="hover:underline">Buy Now</a>
+        </div>
+        <div class="flex space-x-4">
+            <a href="#" class="hover:text-gray-300">F</a>
+            <a href="#" class="hover:text-gray-300">X</a>
+            <a href="#" class="hover:text-gray-300">IG</a>
+        </div>
+        </div>
+
+        <!-- Logo + Banner -->
+        <div class="hidden md:flex justify-between items-center px-6 py-6">
+        <!-- Logo -->
+        <div class="flex items-center space-x-1 text-3xl font-bold">
+            <span>Newsline</span>
+            <span class="bg-blue-500 text-white px-2 rounded">365</span>
+        </div>
+        <!-- Banner -->
+        <div class="border p-4 rounded flex items-center space-x-6">
+            <div>
+            <h2 class="text-sm font-bold">SMARTMAG</h2>
+            <p class="text-xs">Trusted by <span class="text-red-600 font-semibold">14000+</span> Users Worldwide</p>
+            </div>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full">
+            GET STARTED
+            </button>
+        </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="bg-black text-white px-6">
+        <div class="flex justify-between items-center py-3">
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center justify-center space-x-8 font-semibold">
+                <button class=" text-blue-400 text-2xl">☰</button>
+                <li><a href="#" class="">Home</a></li>
+
+                <!-- <li><a href="#" class="">Features ▾</a></li> -->
+
+                <ul data-twe-navbar-nav-ref>
+                    <li class=" static" data-twe-nav-item-ref data-twe-dropdown-ref>
+                    <a class="flex items-center whitespace-nowrap py-2 pe-2  transition duration-200 hover:ease-in-out "
+                        href="#" type="button" id="dropdownMenuButtonX" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-nav-link-ref >
+                       Health ▾
+                    </a>
+                    <div class="absolute !top-2 !right-0 !left-0 z-[1000] mt-0 hidden  border-none bg-white data-[twe-dropdown-show]:block "
+                        aria-labelledby="dropdownMenuButtonX" data-twe-dropdown-menu-ref>
+                        <!-- <div class="px-6 py-5 lg:px-8">
+                            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                                <div>
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Lorem ipsum</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Dolor sit</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Amet consectetur</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Cras justo odio</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Adipisicing elit</a
+                                >
+                                </div>
+                                <div>
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Explicabo voluptas</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Perspiciatis quo</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Cras justo odio</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Laudantium maiores</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Provident dolor</a
+                                >
+                                </div>
+                                <div>
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Iste quaerato</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Cras justo odio</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Est iure</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Praesentium</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Laboriosam</a
+                                >
+                                </div>
+                                <div>
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Cras justo odio</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Saepe</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Vel alias</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Sunt doloribus</a
+                                >
+                                <a
+                                    href="#!"
+                                    aria-current="true"
+                                    class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    >Cum dolores</a
+                                >
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="container mx-auto bg-black text-white p-6 w-full">
+                            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+
+                                <!-- Card 1 -->
+                                <a href="#" class="space-y-2">
+                                    <img src="./public/images/001.jpg" alt="" class="w-full h-40 object-cover rounded">
+                                    <h3 class="font-bold text-lg hover:text-blue-400 transition-colors duration-300">Blood Proteomic Survey in Undiagnosed Population with COVID-19</h3>
+                                    <p class="text-gray-400 text-sm ">Jan 19, 2021</p>
+                                </a>
+
+                                <!-- Card 2 -->
+                                <a href="#" class="space-y-2">
+                                    <img src="./public/images/001.jpg" alt="" class="w-full h-40 object-cover rounded">
+                                    <h3 class="font-bold text-lg hover:text-blue-400 transition-colors duration-300">Blood Proteomic Survey in Undiagnosed Population with COVID-19</h3>
+                                    <p class="text-gray-400 text-sm ">Jan 19, 2021</p>
+                                </a>
+
+                                <!-- Card 3 -->
+                                <a href="#" class="space-y-2">
+                                    <img src="./public/images/001.jpg" alt="" class="w-full h-40 object-cover rounded">
+                                    <h3 class="font-bold text-lg hover:text-blue-400 transition-colors duration-300">Blood Proteomic Survey in Undiagnosed Population with COVID-19</h3>
+                                    <p class="text-gray-400 text-sm ">Jan 19, 2021</p>
+                                </a>
+
+                                <!-- Card 4 -->
+                                <a href="#" class="space-y-2">
+                                    <img src="./public/images/001.jpg" alt="" class="w-full h-40 object-cover rounded">
+                                    <h3 class="font-bold text-lg hover:text-blue-400 transition-colors duration-300">Blood Proteomic Survey in Undiagnosed Population with COVID-19</h3>
+                                    <p class="text-gray-400 text-sm ">Jan 19, 2021</p>
+                                </a>
+
+                                <!-- Card 5 (with rating) -->
+                                <a href="#" class="space-y-2">
+                                    <img src="./public/images/001.jpg" alt="" class="w-full h-40 object-cover rounded">
+                                    <h3 class="font-bold text-lg hover:text-blue-400 transition-colors duration-300">Blood Proteomic Survey in Undiagnosed Population with COVID-19</h3>
+                                    <p class="text-gray-400 text-sm ">Jan 19, 2021</p>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    </li>
+                </ul>
+
+                <li><a href="#" class="">World ▾</a></li>
+                <li><a href="#" class="">Sports</a></li>
+
+
+                <ul data-twe-navbar-nav-ref>
+                    <li class=" static" data-twe-nav-item-ref data-twe-dropdown-ref>
+                    <a class="flex items-center whitespace-nowrap py-2 pe-2  transition duration-200 hover:ease-in-out "
+                        href="#" type="button" id="dropdownMenuButtonX" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-nav-link-ref >
+                      Features ▾
+                    </a>
+                    <div class="absolute !top-2 !right-0 !left-0 z-[1000] mt-0 hidden data-[twe-dropdown-show]:block "
+                        aria-labelledby="dropdownMenuButtonX" data-twe-dropdown-menu-ref>
+                        <div class="container mx-auto bg-black text-white px-6 py-5 lg:px-8">
+                            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                                <div>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full  bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                </div>
+
+                                <div>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full  bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                </div>
+                                <div>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full  bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                </div>
+                                <div>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    <a href="#!" aria-current="true" class="block w-full  bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </li>
+                </ul>
+
+                <div class="overflow-hidden hover:bg-transparent group">
+                    <a href="#" class="flex items-center justify-center gap-x-[5px] group">
+                        <p class="">Technology</p>
+                    </a>
+                    <div class="container mx-auto hidden absolute !z-50 top-[210px] right-0 left-0 shadow-md bg-black w-full group-hover:block py-3">
+                        
+                        <span class="group/submenu">
+                        <a class="text-white text-sm p-5 font-bold font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">
+                            Vitamins, Minerals and Nutrients
+                        </a>
+                        <div class="container mx-auto hidden absolute top-[45px] border border-b right-0 left-0 shadow-md bg-black w-full group-hover/submenu:block py-3">
+                            <div class="grid grid-flow-col grid-rows-5 gap-3 p-5">
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            </div>
+                        </div>
+                        </span>
+
+                        <span class="group/submenu1">
+                        <a class="text-white text-sm p-5 font-bold font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Weight Management & Healthy Diet</a>
+                        <div class="container mx-auto hidden absolute top-[45px] border border-b right-0 left-0 shadow-md bg-black w-full group-hover/submenu1:block py-3">
+                        <div class="grid grid-flow-col grid-rows-5 gap-3 p-5">
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            </div>
+                        </div>
+                        </span>
+
+                        <span class="group/submenu2">
+                        <a class="text-white text-sm p-5 font-bold font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Herbal Supplements & Tea</a>
+                        <div class="container mx-auto hidden absolute top-[45px] border border-b right-0 left-0 shadow-md bg-black w-full group-hover/submenu2:block py-3">
+                            <div class="grid grid-flow-col grid-rows-5 gap-3 p-5">
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            </div>
+                        </div>
+                        </span>
+
+                        <span class="group/submenu3">
+                        <a class="text-white text-sm p-5 font-bold font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Beauty Supplements</a>
+                        <div class="container mx-auto hidden absolute top-[45px] border border-b right-0 left-0 shadow-md bg-black w-full group-hover/submenu3:block py-3">
+                        <div class="grid grid-flow-col grid-rows-5 gap-3 p-5">
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            </div>
+                        </div>
+                        </span>
+
+                        <span class="group/submenu4">
+                        <a class="text-white text-sm p-5 font-bold font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Addiction Treatment</a>
+                        <div class="container mx-auto hidden absolute top-[45px] border border-b right-0 left-0 shadow-md bg-black w-full group-hover/submenu4:block py-3">
+                        <div class="grid grid-flow-col grid-rows-5 gap-3 p-5">
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                            <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                            </div>
+                        </div>
+                        </span>
+
+                    </div>
+                </div>
+
+                <li><a href="#" class="">Buy Theme</a></li>
+            </ul>
+
+            <div class="block lg:hidden">
+                <button class=" text-blue-400 text-2xl">☰</button>
+            </div>
+
+            <div class="flex lg:hidden items-center space-x-1 text-xl font-bold">
+                <span>Newsline</span>
+                <span class="bg-blue-500 text-white px-1 rounded">365</span>
+            </div>
+
+            <div class="flex space-x-4 items-center">
+                <button class="hidden md:block">🌙</button>
+                <button>🔍</button>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <section class=" text-black lg:px-0 px-5 bg-white">
+
+        <div class="container  mx-auto py-8">
+            <div class="flex flex-col lg:flex-row ">
+            
+            <!-- Left  -->
+            <div class="w-full lg:w-2/3 space-y-6">
+                <!-- Breadcrumb -->
+                <nav class="text-sm text-gray-400 mb-4" aria-label="Breadcrumb">
+                    <ol class="list-reset flex space-x-2">
+                    <li>
+                        <a href="#" class="hover:text-gray-600">Home</a>
+                    </li>
+                    <li>/</li>
+                    <li>
+                        <a href="#" class="hover:text-gray-600">Health</a>
+                    </li>
+                    <li>/</li>
+                    <li class="text-gray-500">First Full Endoscopic Spine Surgery Conducted at MMC</li>
+                    </ol>
+                </nav>
+
+                <!-- Title -->
+                <h1 class="text-3xl font-extrabold mb-2">First Full Endoscopic Spine SuSpine Surgery ConductedSpine Surgery ConductedSpine Surgery Conductedrgery Conducted at MMC</h1>
+
+                <!-- Subtitle -->
+                <p class="text-gray-600 mb-6">
+                    Having not yet visited Sector 10, follow these steps for a free upgrade.
+                </p>
+
+                <!-- Author & Meta -->
+                <div class="flex flex-col md:flex-row md:items-center text-gray-600 text-sm space-y-2 md:space-y-0 md:space-x-2 mb-6">
+                    <div class="flex items-center space-x-2">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Author" class="w-8 h-8 rounded-full object-cover" />
+                        <span class="text-xs"><strong>By Shane Doe</strong></span>
+                        <span>— Jan 15, 2021</span>
+                    </div>
+
+                    <div class="flex flex-wrap md:flex-nowrap items-center space-x-2 ml-8 lg:ml-0">
+                        <span>3 Comments</span>
+                        <span>8 Mins Read</span>
+                    </div>
+                </div>
+
+
+                <!-- Social Buttons -->
+                <div class="flex space-x-2">
+                    <a href="#" class="bg-blue-700 hover:bg-blue-800 text-white px-2 lg:px-4 py-2 rounded text-sm font-semibold flex items-center justify-center">Facebook</a>
+                    <a href="#" class="bg-sky-400 hover:bg-sky-500 text-white px-2 lg:px-4 py-2 rounded text-sm font-semibold flex items-center justify-center">Twitter</a>
+                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-2 lg:px-4 py-2 rounded text-sm font-semibold flex items-center justify-center">Pinterest</a>
+                    <a href="#" class="bg-blue-900 hover:bg-blue-950 text-white px-2 lg:px-4 py-2 rounded text-sm font-semibold flex items-center justify-center">LinkedIn</a>
+                    <a href="#" class="border-gray-300 border flex items-center justify-center p-2"><i class="fa-solid fa-share text-gray-400"></i></a>
+                </div>
+
+
+                <img class="w-full" src="../public/images/31.jpg" alt="photo">
+
+                <div class="flex max-w-5xl mx-auto p-4">
+                    <!-- Share Sidebar (hidden on mobile) -->
+                    <div class="hidden md:flex flex-col space-y-4 mr-16">
+                        <p>SHARe</p>
+                        <button class="p-2 bg-gray-100 rounded shadow">F</button>
+                        <button class="p-2 bg-gray-100 rounded shadow">X</button>
+                        <button class="p-2 bg-gray-100 rounded shadow">in</button>
+                        <button class="p-2 bg-gray-100 rounded shadow">P</button>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="flex-1 space-y-6">
+                    <p class="text-lg leading-relaxed">
+                    <span class="text-5xl font-bold float-left mr-2">T</span>
+                    o understand the new politics stance and other pro nationals of recent
+                    times, we should look to Silicon Valley and the quantified movement of the
+                    latest generation. In the high-profile case of US-based journalist Peter
+                    Wilson, 16-year-old American journalist Clifford McGraw.
+                    </p>
+
+                    <p>
+                    On Monday, UK attorney Andy McDonald revealed that he had spoken to the
+                    prime minister, Theresa May, and Downing Street. Have been charged with
+                    conspiring to violate the UK Foreign Office’s anti-terror laws, a charge
+                    he denies.
+                    </p>
+
+                    <p>
+                    After this, senators were given twenty hours to ask questions of the two
+                    sides.
+                    </p>
+
+                    <ul class="list-disc list-inside text-blue-600 space-y-1">
+                    <li><a href="#">Anthony Zucker: Why there could be a speedy end</a></li>
+                    <li><a href="#">Did Jane’s words at rally incite violence?</a></li>
+                    <li><a href="#">‘They thought they were going to live’</a></li>
+                    </ul>
+
+                    <p>
+                    Speaking to The Andrew Jackson Society, he added: “I want to express to
+                    the people of Scotland: as you know, we are a country of strong and
+                    independent borders and we are prepared to protect them.”
+                    </p>
+
+                    <p class="font-semibold">“I am British.”</p>
+
+                    <p>
+                    Mr McDonald, who was born in Britain in 1955, told the BBC: “I am a
+                    British immigrant, who has worked in Britain for the last 20 years.
+                    </p>
+
+                    <!-- Quote Section -->
+                    <div class="border-l-4 border-blue-500 pl-4 italic text-xl text-gray-700">
+                    “I have lived here since I am a little boy, so when I think about it, I
+                    say to myself: ‘There is nothing particular to be proud of, it was a
+                    really good place for us to live’.”
+                    <div class="mt-2 text-sm text-gray-500">— McDonald’s Jr.</div>
+                    </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- right -->
+            <div class="w-full max-w-sm mx-auto bg-white text-sm font-sans space-y-6">
+
+                <!-- commercial -->
+                <div class="w-full">
+                    <img src="../public/images/News-Right.jpg" alt="SmartMag Ad" class="w-[346px]  ">
+                </div>
+
+                <!-- بخش Don’t Miss -->
+                <div>
+                    <h2 class="text-lg font-semibold border-b pb-2 mb-4">Don’t Miss</h2>
+
+                    <!-- news one -->
+                    <a href="#">
+                        <img src="../public/images/01.jpg" alt="Rocket News" class="w-full object-cover  mb-2">
+                        <h3 class="font-semibold text-base leading-snug mb-3">Rocket Lab launches 2 satellites to orbit, Reaches Electron Booster</h3>
+                        <p class="text-gray-500 text-xs mb-3">2 hours ago - by Admin</p>
+                        <p class="pb-4">To understand the new politics stance and other pro nationals of recent times, we should…</p>
+                    </a>
+
+                    <div class="flex flex-row gap-4 items-center group cursor-pointer pb-2">
+                        <div class="relative max-w-[110px] max-h-[76px] overflow-hidden rounded">
+                            <img src="/public/images/06.jpg" class="object-cover w-full h-full">
+                            <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold px-2 mb-3">Cryptocurrencies Can Destabilize Nations, Hillary Clinton Warns</h3>
+                            <p class="text-xs text-gray-500 mt-1 pl-2">Jan 14, 2020</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row gap-4 items-center group cursor-pointer pb-2  pt-2">
+                        <div class="relative max-w-[110px] max-h-[76px] overflow-hidden rounded">
+                            <img src="/public/images/04.jpg" class="object-cover w-full h-full">
+                            <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold px-2 mb-3">Cryptocurrencies Can Destabilize Nations, Hillary Clinton Warns</h3>
+                            <p class="text-xs text-gray-500 mt-1 pl-2">Jan 14, 2020</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-row gap-4 items-center group cursor-pointer pb-2  pt-2">
+                        <div class="relative max-w-[110px] max-h-[76px] overflow-hidden rounded">
+                            <img src="/public/images/05.jpg" class="object-cover w-full h-full">
+                            <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold px-2 mb-3">Cryptocurrencies Can Destabilize Nations, Hillary Clinton Warns</h3>
+                            <p class="text-xs text-gray-500 mt-1 pl-2">Jan 14, 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  social media -->
+                <div class="space-y-2">
+                    <h2 class="text-xl font-semibold mb-2">Stay in Touch</h2>
+                    <div class="grid grid-cols-2 gap-2">
+
+
+                        <a href="#" class="bg-blue-600 text-white font-semibold overflow-hidden rounded lg:w-48">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center justify-center bg-blue-700 px-2 py-2">
+                                    <i class="fa-brands fa-facebook text-lg"></i>
+                                </div>
+                                <span>Facebook</span>
+                                <span class="pr-3">1.1K</span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="bg-blue-400 text-white font-semibold overflow-hidden rounded lg:w-48">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center justify-center bg-blue-500 px-2 py-2">
+                                    <i class="fa-brands fa-twitter text-lg"></i>
+                                </div>
+                                <span>twitter</span>
+                                <span class="pr-3">1.1K</span>
+                            </div>
+                        </a>
+                        <a href="#" class="bg-red-600 text-white font-semibold overflow-hidden rounded lg:w-48">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center justify-center bg-red-700 px-2 py-2">
+                                    <i class="fa-brands fa-instagram text-lg"></i>
+                                </div>
+                                <span>instagram</span>
+                                <span class="pr-3">1.1K</span>
+                            </div>
+                        </a>
+                        <a href="#" class="bg-pink-600 text-white font-semibold overflow-hidden rounded lg:w-48">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center justify-center bg-pink-700 px-2 py-2">
+                                    <i class="fa-brands fa-pinterest text-lg"></i>
+                                </div>
+                                <span>pinterest</span>
+                                <span class="pr-3">1.1K</span>
+                            </div>
+                        </a>
+                        <a href="#" class="bg-red-500 text-white font-semibold overflow-hidden rounded lg:w-48">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center justify-center bg-red-600 px-2 py-2">
+                                    <i class="fa-brands fa-vimeo-v text-lg"></i>
+                                </div>
+                                <span>vimeo-v</span>
+                                <span class="pr-3">1.1K</span>
+                            </div>
+                        </a>
+                        <a href="#" class="bg-sky-500 text-white font-semibold overflow-hidden rounded lg:w-48">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center justify-center bg-sky-600 px-2 py-2">
+                                    <i class="fa-brands fa-youtube text-lg"></i>
+                                </div>
+                                <span>youtube</span>
+                                <span class="pr-3">1.1K</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Our Picks -->
+                <div>
+                    <h2 class="text-lg font-semibold border-b pb-2 mb-4">Our Picks</h2>
+
+                    <div class="space-y-4">
+
+                        <!-- cart -->
+                        <div class="flex gap-3">
+                            <img src="../public/images/14.jpg" class="aspect-[16/11] w-[110px] object-cover rounded" />
+                            <div>
+                            <h3 class="font-medium text-sm">NASA: Stunning Southern Lights from Space</h3>
+                            <p class="text-gray-500 text-xs">1 day ago</p>
+                            </div>
+                        </div>
+
+                        <!-- cart -->
+                        <div class="flex gap-3">
+                            <img src="../public/images/12.jpg" class="aspect-[16/11] w-[110px] object-cover rounded" />
+                            <div>
+                            <h3 class="font-medium text-sm">NASA: Stunning Southern Lights from Space</h3>
+                            <p class="text-gray-500 text-xs">1 day ago</p>
+                            </div>
+                        </div>
+                        <!-- cart -->
+                        <div class="flex gap-3">
+                            <img src="../public/images/14.jpg" class="aspect-[16/11] w-[110px] object-cover rounded" />
+                            <div>
+                            <h3 class="font-medium text-sm">NASA: Stunning Southern Lights from Space</h3>
+                            <p class="text-gray-500 text-xs">1 day ago</p>
+                            </div>
+                        </div>
+                        <!-- cart -->
+                        <div class="flex gap-3">
+                            <img src="../public/images/12.jpg" class="aspect-[16/11] w-[110px] object-cover rounded" />
+                            <div>
+                            <h3 class="font-medium text-sm">NASA: Stunning Southern Lights from Space</h3>
+                            <p class="text-gray-500 text-xs">1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Subscribe to the newsletter  -->
+                <div class="relative bg-gray-100 p-10 rounded text-center border border-gray-200 ">
+
+                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 flex items-center justify-center bg-sky-600 w-12 h-12 rounded-full">
+                        <i class="fa-solid fa-envelope text-white text-xl"></i>
+                    </div>
+
+                    <h3 class="font-semibold text-2xl mt-4 mb-2">Subscribe to Updates</h3>
+                    <p class="text-gray-600 text-sm mb-3">Subscribe now and receive the latest articles in your inbox.</p>
+                    <form class="space-y-2 mb-4">
+                        <input type="email" placeholder="Your email address" class="w-full border border-gray-300 rounded px-3 py-2 text-sm placeholder:text-center" />
+                        <button class="w-full bg-blue-600 text-white rounded py-2">Subscribe</button>
+                    </form>
+                    <div class="flex items-center justify-center gap-x-2 ">
+                        <input class="lg:mt-[2px]" type="checkbox">
+                        <p class="text-xs sm:text-sm text-gray-400 mt-3 lg:mt-0 text-center">By signing up, you agree to the our terms and our Privacy Policy agreement.</p>
+                    </div>
+                </div>
+
+
+                <!-- commercial-->
+                <div class="w-full">
+                    <img src="../public/images/News-Right.jpg" alt="Ad Banner" class="w-full rounded">
+                </div>
+
+            </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#0f0f11] text-gray-100 ">
+        <div class="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- column 1 -->
+            <div class="space-y-4">
+                <h3 class="text-xl lg:text-2xl font-bold pb-2 border-b border-[#2e2e2f]">About Us</h3>
+                <div class="flex items-center space-x-1 text-3xl font-bold">
+                    <span>Newsline</span>
+                    <span class="bg-blue-500 text-white px-2 rounded">365</span>
+                </div>
+                <p class="text-sm leading-relaxed lg:w-5/6">
+                    Your source for the lifestyle news. This demo is crafted specifically
+                    to exhibit the use of the theme as a lifestyle site. Visit our main page
+                    for more demos.  
+                </p>
+                <p class="text-sm">We’re accepting new partnerships right now.</p>
+                <p class="text-sm mt-2">Email: info@example.com</p>
+                <p class="text-sm">Contact: +1-320-0123-451</p>
+                <ul class="flex gap-3 mt-3">
+                    <li>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-blue-500">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-blue-500">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-blue-500">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-blue-500">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- column 2 -->
+            <div>
+                <h3 class="text-xl lg:text-2xl font-bold pb-2 border-b border-[#2e2e2f] mb-4">Our Picks</h3>
+                <div class="space-y-4">
+                    <div class="flex gap-3 border-b border-gray-700 pb-3">
+                        <img src="../public/images/14.jpg" class="aspect-[16/11] w-[110px]" alt="images">
+                        <div>
+                            <p class="w-5/6 mb-1 text-sm font-bold">Young Teen Sucker-punches Opponent</p>
+                            <span class="text-xs text-gray-400">Mar 12, 2021</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 border-b border-gray-700 pb-3">
+                        <img src="../public/images/12.jpg" class="aspect-[16/11] w-[110px]" alt="images">
+                        <div>
+                            <p class="w-5/6 mb-1 text-sm font-bold">Fidelity Launches Canada’s First Bitcoin Custody Service</p>
+                            <span class="text-xs text-gray-400">Jan 22, 2021</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 border-b border-gray-700 pb-3">
+                        <img src="../public/images/13.jpg" class="aspect-[16/11] w-[110px]" alt="images">
+                        <div>
+                            <p class="w-5/6 mb-1 text-sm font-bold">At White House, Frustration Over Who Gets to Ask Questions</p>
+                            <span class="text-xs text-gray-400">Jan 22, 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- column 3 -->
+            <aside class="lg:sticky lg:top-6 h-fit">
+                <h3 class="text-xl lg:text-2xl font-bold pb-2 border-b border-[#2e2e2f] mb-4">New Comments</h3>
+                <!-- <ul class="space-y-3 text-sm">
+                    <li><span class="font-bold text-blue-400">Jane Doe</span> on Mirrorless or DSLR: Which is Best for Photography?</li>
+                    <li><span class="font-bold text-blue-400">Jane Doe</span> on New Marvel’s Avengers MCU Suit Surprises Fans</li>
+                    <li><span class="font-bold text-blue-400">Jane Doe</span> on Pfizer Signs $5.3 Billion US Deal to Supply Covid-19 Antiviral Pills</li>
+                    <li><span class="font-bold text-blue-400">Jane Doe</span> on Cryptocurrencies Can Destabilize Nations, Hillary Clinton Warns</li>
+                </ul> -->
+                <div class="text-white px-4 pt-2 border-b border-gray-700 max-w-md">
+
+                    <p class="text-xs text-blue-500 font-semibold mb-3">
+                        JANE DOE <span class="text-gray-400">on</span>
+                    </p>
+                    
+                    <h2 class="mt-1 mb-3 text-sm font-semibold w-3/4 ">
+                        Mirrorless or DSLR: Which is Best for Photography?
+                    </h2>
+                </div>
+
+                <div class="text-white px-4 pt-2 border-b border-gray-700 max-w-md">
+
+                    <p class="text-xs text-blue-500 font-semibold mb-3">
+                        JANE DOE <span class="text-gray-400">on</span>
+                    </p>
+                    
+                    <h2 class="mt-1 mb-3 text-sm font-semibold w-3/4 ">
+                        Mirrorless or DSLR: Which is Best for Photography?
+                    </h2>
+                </div>
+                <div class="text-white px-4 pt-2 border-b border-gray-700 max-w-md">
+
+                    <p class="text-xs text-blue-500 font-semibold mb-3">
+                        JANE DOE <span class="text-gray-400">on</span>
+                    </p>
+                    
+                    <h2 class="mt-1 mb-3 text-sm font-semibold w-3/4 ">
+                        Mirrorless or DSLR: Which is Best for Photography?
+                    </h2>
+                </div>
+                <div class="text-white px-4 pt-2 border-b border-gray-700 max-w-md">
+
+                    <p class="text-xs text-blue-500 font-semibold mb-3">
+                        JANE DOE <span class="text-gray-400">on</span>
+                    </p>
+                    
+                    <h2 class="mt-1 mb-3 text-sm font-semibold w-3/4 ">
+                        Mirrorless or DSLR: Which is Best for Photography?
+                    </h2>
+                </div>
+            </aside>
+
+        </div>
+        <div class=" bg-black pb-5">
+            <div class="container mx-auto flex flex-col-reverse lg:flex-row justify-between items-center">
+                <div class="text-center text-xs text-gray-500 py-6 ">
+                    © 2025 ThemeSphere. Designed by ThemeSphere.
+                </div>
+                <ul class="flex  gap-x-4">
+                    <li><a class="border-r pr-3 h-3 border-gray-700" href="#">Home</a></li>
+                    <li><a class="border-r pr-3 border-gray-700" href="#">Health</a></li>
+                    <li><a class="border-r pr-3 border-gray-700" href="#">About</a></li>
+                    <li><a class="border-r pr-3 border-gray-700" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../src/main.js"></script>
+</body>
+</html>
