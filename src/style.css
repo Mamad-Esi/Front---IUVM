@@ -122,3 +122,19 @@
   opacity: 1 !important;
   background: #3b82f6;
 }
+
+
+  .overlay {
+    transition: opacity 0.3s ease;
+  }
+  .offcanvas {
+    transition: transform 0.3s ease;
+  }
+
+    #navbar {
+    transition: all 0.3s ease-in-out; 
+  }
+  #navbar.scrolled {
+    padding: 0.75rem 1.5rem; 
+    background-color: rgba(0,0,0,0.95); 
+  }

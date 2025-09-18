@@ -8,192 +8,52 @@
   </head>
   <body class="font-sans" >
 
-    <header class="mx-auto container">
+    <header  class="mx-auto container  ">
+
         <!-- Top blue bar (Desktop only) -->
-        <div class="hidden md:flex bg-gradient-to-r from-blue-600 to-blue-800 text-white text-sm px-6 py-2 justify-between items-center">
-        <div class="flex space-x-6">
-            <a href="#" class="hover:underline">Start Here</a>
-            <a href="#" class="hover:underline">Demos</a>
-            <a href="#" class="hover:underline">Contact</a>
-            <a href="#" class="hover:underline">Buy Now</a>
-        </div>
-        <div class="flex space-x-4">
-            <a href="#" class="hover:text-gray-300">F</a>
-            <a href="#" class="hover:text-gray-300">X</a>
-            <a href="#" class="hover:text-gray-300">IG</a>
-        </div>
+        <div class="hidden  md:flex bg-gradient-to-r from-blue-600 to-blue-800 text-white text-sm px-6 py-2 justify-between items-center">
+            <div class="flex space-x-6">
+                <a href="#" class="hover:underline">Start Here</a>
+                <a href="#" class="hover:underline">Demos</a>
+                <a href="#" class="hover:underline">Contact</a>
+                <a href="#" class="hover:underline">Buy Now</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-300">F</a>
+                <a href="#" class="hover:text-gray-300">X</a>
+                <a href="#" class="hover:text-gray-300">IG</a>
+            </div>
         </div>
 
         <!-- Logo + Banner -->
         <div class="hidden md:flex justify-between items-center px-6 py-6">
-        <!-- Logo -->
-        <div class="flex items-center space-x-1 text-3xl font-bold">
-            <span>Newsline</span>
-            <span class="bg-blue-500 text-white px-2 rounded">365</span>
-        </div>
-        <!-- Banner -->
-        <div class="border p-4 rounded flex items-center space-x-6">
-            <div>
-            <h2 class="text-sm font-bold">SMARTMAG</h2>
-            <p class="text-xs">Trusted by <span class="text-red-600 font-semibold">14000+</span> Users Worldwide</p>
+            <!-- Logo -->
+            <div class="flex items-center space-x-1 text-3xl font-bold">
+                <span>Newsline</span>
+                <span class="bg-blue-500 text-white px-2 rounded">365</span>
             </div>
-            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full">
-            GET STARTED
-            </button>
-        </div>
+            <!-- Banner -->
+            <a  href="#">
+                <img class="aspect-[16/2] w-[728px]" src="../../public/images/41.jpg" alt="photo">
+            </a>
         </div>
 
         <!-- Navbar -->
-        <nav class="bg-black text-white px-6">
-        <div class="flex justify-between items-center py-3">
-            
+        <nav class=" container mx-auto bg-black text-white px-6 transition-all duration-500 ease-in-out "> <!-- fixed top-0 right-0 left-0 z-50 mt-32 -->
             <!-- Desktop Menu -->
-            <ul class="hidden md:flex items-center justify-center space-x-8 font-semibold">
+            <ul id="navbar"  class=" container mx-auto px-6 hidden md:flex items-center justify-between">
+                <div class="flex items-center space-x-8 font-semibold">
                 <button class=" text-blue-400 text-2xl">☰</button>
                 <li><a href="#" class="">Home</a></li>
-
-                <!-- <li><a href="#" class="">Features ▾</a></li> -->
 
                 <ul data-twe-navbar-nav-ref>
                     <li class=" static" data-twe-nav-item-ref data-twe-dropdown-ref>
                     <a class="flex items-center whitespace-nowrap py-2 pe-2  transition duration-200 hover:ease-in-out "
                         href="#" type="button" id="dropdownMenuButtonX" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-nav-link-ref >
-                       Health ▾
+                    Health ▾
                     </a>
                     <div class="absolute !top-2 !right-0 !left-0 z-[1000] mt-0 hidden  border-none bg-white data-[twe-dropdown-show]:block "
                         aria-labelledby="dropdownMenuButtonX" data-twe-dropdown-menu-ref>
-                        <!-- <div class="px-6 py-5 lg:px-8">
-                            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-                                <div>
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Lorem ipsum</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Dolor sit</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Amet consectetur</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Cras justo odio</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Adipisicing elit</a
-                                >
-                                </div>
-                                <div>
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Explicabo voluptas</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Perspiciatis quo</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Cras justo odio</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Laudantium maiores</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Provident dolor</a
-                                >
-                                </div>
-                                <div>
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Iste quaerato</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Cras justo odio</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Est iure</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Praesentium</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Laboriosam</a
-                                >
-                                </div>
-                                <div>
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Cras justo odio</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Saepe</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Vel alias</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Sunt doloribus</a
-                                >
-                                <a
-                                    href="#!"
-                                    aria-current="true"
-                                    class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                    >Cum dolores</a
-                                >
-                                </div>
-                            </div>
-                        </div> -->
 
                         <div class="container mx-auto bg-black text-white p-6 w-full">
                             <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
@@ -248,7 +108,7 @@
                     <li class=" static" data-twe-nav-item-ref data-twe-dropdown-ref>
                     <a class="flex items-center whitespace-nowrap py-2 pe-2  transition duration-200 hover:ease-in-out "
                         href="#" type="button" id="dropdownMenuButtonX" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-nav-link-ref >
-                      Features ▾
+                    Features ▾
                     </a>
                     <div class="absolute !top-2 !right-0 !left-0 z-[1000] mt-0 hidden data-[twe-dropdown-show]:block "
                         aria-labelledby="dropdownMenuButtonX" data-twe-dropdown-menu-ref>
@@ -442,23 +302,73 @@
                 </div>
 
                 <li><a href="#" class="">Buy Theme</a></li>
+                </div>
+
+                <div class="flex space-x-4 items-center">
+                    <a href="#" class="hidden md:block"><i class="fa-solid fa-moon"></i></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
             </ul>
 
-            <div class="block lg:hidden">
-                <button class=" text-blue-400 text-2xl">☰</button>
-            </div>
+            <!-- mobile menu -->
+            <div id="navbar1" class="lg:hidden flex items-center justify-between !z-50 ">
+                <button id="openBtn" class="text-blue-600 text-2xl p-2 transition duration-300 ease-in-out">
+                    <i class="fa-solid fa-bars"></i> 
+                </button>
 
-            <div class="flex lg:hidden items-center space-x-1 text-xl font-bold">
-                <span>Newsline</span>
-                <span class="bg-blue-500 text-white px-1 rounded">365</span>
-            </div>
+                <!-- overlay -->
+                <div id="overlay" class="fixed inset-0 w-full bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"></div>
 
-            <div class="flex space-x-4 items-center">
-                <button class="hidden md:block">🌙</button>
-                <button>🔍</button>
+                <!-- offcanvas -->
+                <div id="offcanvas" class="!z-50 fixed top-0 right-0 h-full w-full bg-black shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
+                    <div class="flex items-center justify-between p-4 border-b">
+                        <div class="flex lg:hidden items-center space-x-1 text-xl font-bold">
+                            <span>Newsline</span>
+                            <span class="bg-blue-500 text-white px-1 rounded">365</span>
+                        </div>
+
+                        <button id="closeBtn" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="p-4 overflow-y-auto h-auto w-full text-black">
+                        <ul class="flex flex-col text-white space-y-5 mt-5">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Archive</li>
+                        </ul>
+                    </div>
+
+                    <!-- INPUT -->
+                    <div class="mx-4 border border-gray-500 bg-black  p-4 sm:p-6 flex flex-col items-center justify-center gap-y-4 mt-16">
+                        <h2 class="text-2xl sm:text-5xl mb-5 font-bold text-gray-300">Join our mailing list</h2>
+                        <p class="text-xs sm:text-xl text-gray-300 mt-1 sm:mt-2 text-center">Get the latest creative news from FooBar about art, design and business.</p>
+                        <div class=" flex items-center justify-center mt-3 sm:mt-4 w-full max-w-3xl gap-x-2">
+                            <input type="email" class="w-8/12 p-2 bg-gray-800 text-gray-300 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your email address..." >
+                            <button class=" w-4/12 bg-blue-500 text-white p-2  rounded-lg hover:bg-blue-600 transition duration-200">SUBSCRIBE</button>
+                        </div>
+                        <div class="flex items-center justify-center gap-x-2">
+                            <input class="lg:mt-[2px]" type="checkbox">
+                            <p class="text-xs sm:text-sm text-gray-400 mt-3 lg:mt-0 text-center">By signing up, you agree to the our terms and our Privacy Policy agreement.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex lg:hidden items-center space-x-1 text-xl font-bold">
+                    <span>Newsline</span>
+                    <span class="bg-blue-500 text-white px-1 rounded">365</span>
+                </div>
+
+                <div class="flex space-x-4 items-center">
+                    <button class="hidden md:block">🌙</button>
+                    <button>🔍</button>
+                </div>
+
             </div>
-        </div>
         </nav>
+
     </header>
 
     <!-- hero -->
@@ -469,13 +379,10 @@
             <!-- Left Column -->
             <div class="lg:col-span-2 space-y-6">
                 <!-- Main Big News -->
-                <!-- <div class="relative overflow-hidden shadow">
-                <img src="./public/images/01.jpg" alt="Rocket Launch" class="w-full h-full object-cover"> -->
 
-                <div class="relative w-full pb-[75.25%] lg:pb-[45.25%] overflow-hidden">
+                <div class="relative aspect-[4/3] lg:aspect-[16/9] overflow-hidden">
                     <a href="#" class="group block w-full h-full">
-                        <img src="./public/images/01.jpg"  alt="Rocket Launch" 
-                        class="absolute top-0 left-0 w-full h-full object-cover transform transition duration-300 ease-in-out group-hover:scale-105">
+                        <img src="./public/images/01.jpg" alt="Rocket Launch" class="absolute top-0 left-0 w-full h-full object-cover transform transition duration-300 ease-in-out group-hover:scale-105">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
                             <p class="text-sm font-semibold">Science</p>
                             <h2 class="text-2xl font-bold">Rocket Lab launches 2 Satellites to Orbit, Recovers Electron Booster</h2>
@@ -486,38 +393,38 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-6 lg:px-0">
                     <!-- Card 1 -->
-                    <a href="#" class="overflow-hidden shadow  group">
-                        <div class="relative pb-[56.1%]">
-                            <img src="./public/images/03.jpg" class="absolute top-0 left-0 w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <a href="#" class="overflow-hidden group">
+                        <div class="relative aspect-[16/9]">
+                        <img src="./public/images/03.jpg" class="absolute top-0 left-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition duration-300"></div>
                         </div>
                         <div class="p-3">
-                            <h3 class="font-semibold">Pandemic Changed Tech, So Galaxy is Changing</h3>
-                            <p class="text-xs text-gray-500 mt-1">Tech — Mar 16, 2020</p>
+                        <h3 class="font-semibold">Pandemic Changed Tech, So Galaxy is Changing</h3>
+                        <p class="text-xs text-gray-500 mt-1">Tech — Mar 16, 2020</p>
                         </div>
                     </a>
 
                     <!-- Card 2 -->
-                    <a href="#" class="overflow-hidden shadow group">
-                        <div class="relative pb-[56.1%]">
-                            <img src="./public/images/04.jpg" class="absolute top-0 left-0 w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <a href="#" class="overflow-hidden group">
+                        <div class="relative aspect-[16/9]">
+                        <img src="./public/images/04.jpg" class="absolute top-0 left-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition duration-300"></div>
                         </div>
                         <div class="p-3">
-                            <h3 class="font-semibold">Hyundai Goes Big With its Latest Electric Concept SUV</h3>
-                            <p class="text-xs text-gray-500 mt-1">Tech — Jan 14, 2020</p>
+                        <h3 class="font-semibold">Hyundai Goes Big With its Latest Electric Concept SUV</h3>
+                        <p class="text-xs text-gray-500 mt-1">Tech — Jan 14, 2020</p>
                         </div>
                     </a>
 
                     <!-- Card 3 -->
-                    <a href="#" class="overflow-hidden shadow group">
-                        <div class="relative pb-[56.1%]">
-                            <img src="./public/images/05.jpg" class="absolute top-0 left-0 w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                    <a href="#" class="overflow-hidden group">
+                        <div class="relative aspect-[16/9]">
+                        <img src="./public/images/05.jpg" class="absolute top-0 left-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition duration-300"></div>
                         </div>
                         <div class="p-3">
-                            <h3 class="font-semibold">Majority of Gen Z think They’ll Become Crypto Millionaires</h3>
-                            <p class="text-xs text-gray-500 mt-1">Business — Jan 14, 2020</p>
+                        <h3 class="font-semibold">Majority of Gen Z think They’ll Become Crypto Millionaires</h3>
+                        <p class="text-xs text-gray-500 mt-1">Business — Jan 14, 2020</p>
                         </div>
                     </a>
                 </div>
@@ -525,34 +432,21 @@
             </div>
 
             <div class="space-y-6 px-6 lg:px-0">
-                <div class="overflow-hidden shadow relative group">
-                    <div class="relative w-full pb-[56.25%]">
-                        <img src="./public/images/02.jpg" class="absolute top-0 left-0 w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition duration-300"></div>
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 text-white">
-                            <h3 class="font-semibold text-lg">Men’s Tennis Wraps Up Fall Play at Navy Invitational</h3>
-                            <p class="text-xs mt-1">Sports — Jan 14, 2020</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ino bebin -->
-                <!-- <div class="overflow-hidden shadow">
-                    <img src="./public/images/02.jpg" class="w-full object-cover">
-                    <div class="p-3">
-                        <h3 class="font-semibold">Men’s Tennis Wraps Up Fall Play at Navy Invitational</h3>
-                        <p class="text-xs text-gray-500 mt-1">Sports — Jan 14, 2020</p>
-                    </div>
-                </div> -->
 
-                <!-- List of Small News -->
-                <!-- <div class="flex flex-row-reverse gap-4 items-center">
-                    <img src="/public/images/06.jpg" class="object-cover rounded max-w-[110px] max-h-[76px]">
-                    <div>
-                        <h3 class="font-semibold">Cryptocurrencies Can Destabilize Nations, Hillary Clinton Warns</h3>
-                        <p class="text-xs text-gray-500 mt-1">Jan 14, 2020</p>
-                    </div>
-                </div> -->
-                <div class="flex flex-row-reverse gap-4 items-center group cursor-pointer">
+                <div class="overflow-hidden shadow relative group">
+                    <a href="#">
+                        <div class="relative aspect-video">
+                            <img src="./public/images/02.jpg" class="absolute top-0 left-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition duration-300"></div>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 text-white">
+                                <h3 class="font-semibold text-lg">Men’s Tennis Wraps Up Fall Play at Navy Invitational</h3>
+                                <p class="text-xs mt-1">Sports — Jan 14, 2020</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="flex flex-row-reverse gap-4 items-center group">
                     <div class="relative max-w-[110px] max-h-[76px] overflow-hidden rounded">
                         <img src="/public/images/06.jpg" 
                             class="object-cover w-full h-full">
@@ -565,7 +459,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-row-reverse gap-4 items-center group cursor-pointer">
+                <div class="flex flex-row-reverse gap-4 items-center group">
                     <div class="relative max-w-[110px] max-h-[76px] overflow-hidden rounded">
                         <img src="/public/images/09.jpg" 
                             class="object-cover w-full h-full">
@@ -577,7 +471,7 @@
                         <p class="text-xs text-gray-500 mt-1">Jan 14, 2020</p>
                     </div>
                 </div>
-                                <div class="flex flex-row-reverse gap-4 items-center group cursor-pointer">
+                <div class="flex flex-row-reverse gap-4 items-center group">
                     <div class="relative max-w-[110px] max-h-[76px] overflow-hidden rounded">
                         <img src="/public/images/07.jpg" 
                             class="object-cover w-full h-full">
@@ -589,7 +483,7 @@
                         <p class="text-xs text-gray-500 mt-1">Jan 14, 2020</p>
                     </div>
                 </div>
-                                <div class="flex flex-row-reverse gap-4 items-center group cursor-pointer">
+                <div class="flex flex-row-reverse gap-4 items-center group">
                     <div class="relative max-w-[110px] max-h-[76px] overflow-hidden rounded">
                         <img src="/public/images/08.jpg" 
                             class="object-cover w-full h-full">
@@ -604,88 +498,95 @@
 
             </div>
 
-
         </div>
     </section>
 
     <!-- slider -->
-    <section class="bg-black text-white container mx-auto mt-7 relative">
+    <section class="bg-black text-white container mx-auto my-7 relative">
         <div class="p-4">
-            <h2 class="text-2xl font-bold text-white mb-4"><span class="text-blue-500">World</span> News</h2>
+            <h2 class="text-2xl font-bold text-white"><span class="text-blue-500">World</span> News</h2>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper lg:py-8">
-                    <div class="swiper-slide ">
-                        <div class="w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
-                            <img src="./public/images/010.jpg" alt="News Image 1" class="w-full h-64 md:h-48 object-cover">
+                    <a href="#" class="swiper-slide">
+                        <div class="relative w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
+                            <div class="group relative">
+                                <img src="./public/images/010.jpg" alt="News Image 1" class="w-full  md:aspect-[16/11] object-cover transition-opacity duration-300 md:group-hover:opacity-80">
+                            </div>
                             <div class="mt-2">
-                                <h3 class="text-lg font-semibold text-blue-400">Thousands of Anti-Coup Protesters Continue to March</h3>
-                                <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
+                                <h3 class="text-lg font-semibold text-white">
+                                    Thousands ofofofofofofof Anti-Coup Protesters Continue to March
+                                </h3>
+                                <div class="flex items-center gap-x-8">
+                                    <span class="text-blue-400">Business</span>
+                                    <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
-                            <img src="./public/images/010.jpg" alt="News Image 1" class="w-full h-64 md:h-48 object-cover">
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div class="relative w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
+                            <div class="group relative">
+                                <img src="./public/images/010.jpg" alt="News Image 1" class="w-full  md:aspect-[16/11] object-cover transition-opacity duration-300 md:group-hover:opacity-80">
+                            </div>
                             <div class="mt-2">
-                                <h3 class="text-lg font-semibold text-blue-400">Thousands of Anti-Coup Protesters Continue to March</h3>
-                                <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
+                                <h3 class="text-lg font-semibold text-white">
+                                    Thousands ofofofofofofof Anti-Coup Protesters Continue to March
+                                </h3>
+                                <div class="flex items-center gap-x-8">
+                                    <span class="text-blue-400">Business</span>
+                                    <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
-                            <img src="./public/images/010.jpg" alt="News Image 1" class="w-full h-64 md:h-48 object-cover">
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div class="relative w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
+                            <div class="group relative">
+                                <img src="./public/images/010.jpg" alt="News Image 1" class="w-full  md:aspect-[16/11] object-cover transition-opacity duration-300 md:group-hover:opacity-80">
+                            </div>
                             <div class="mt-2">
-                                <h3 class="text-lg font-semibold text-blue-400">Thousands of Anti-Coup Protesters Continue to March</h3>
-                                <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
+                                <h3 class="text-lg font-semibold text-white">
+                                    Thousands ofofofofofofof Anti-Coup Protesters Continue to March
+                                </h3>
+                                <div class="flex items-center gap-x-8">
+                                    <span class="text-blue-400">Business</span>
+                                    <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
-                            <img src="./public/images/010.jpg" alt="News Image 1" class="w-full h-64 md:h-48 object-cover">
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div class="relative w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
+                            <div class="group relative">
+                                <img src="./public/images/010.jpg" alt="News Image 1" class="w-full  md:aspect-[16/11] object-cover transition-opacity duration-300 md:group-hover:opacity-80">
+                            </div>
                             <div class="mt-2">
-                                <h3 class="text-lg font-semibold text-blue-400">Thousands of Anti-Coup Protesters Continue to March</h3>
-                                <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
+                                <h3 class="text-lg font-semibold text-white">
+                                    Thousands ofofofofofofof Anti-Coup Protesters Continue to March
+                                </h3>
+                                <div class="flex items-center gap-x-8">
+                                    <span class="text-blue-400">Business</span>
+                                    <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                      <div class="swiper-slide ">
-                        <div class="w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
-                            <img src="./public/images/010.jpg" alt="News Image 1" class="w-full h-64 md:h-48 object-cover">
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div class="relative w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
+                            <div class="group relative">
+                                <img src="./public/images/010.jpg" alt="News Image 1" class="w-full  md:aspect-[16/11] object-cover transition-opacity duration-300 md:group-hover:opacity-80">
+                            </div>
                             <div class="mt-2">
-                                <h3 class="text-lg font-semibold text-blue-400">Thousands of Anti-Coup Protesters Continue to March</h3>
-                                <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
+                                <h3 class="text-lg font-semibold text-white">
+                                    Thousands ofofofofofofof Anti-Coup Protesters Continue to March
+                                </h3>
+                                <div class="flex items-center gap-x-8">
+                                    <span class="text-blue-400">Business</span>
+                                    <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
-                            <img src="./public/images/010.jpg" alt="News Image 1" class="w-full h-64 md:h-48 object-cover">
-                            <div class="mt-2">
-                                <h3 class="text-lg font-semibold text-blue-400">Thousands of Anti-Coup Protesters Continue to March</h3>
-                                <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
-                            <img src="./public/images/010.jpg" alt="News Image 1" class="w-full h-64 md:h-48 object-cover">
-                            <div class="mt-2">
-                                <h3 class="text-lg font-semibold text-blue-400">Thousands of Anti-Coup Protesters Continue to March</h3>
-                                <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="w-full md:min-w-[300px] md:flex-shrink-0 mb-4 md:mb-0">
-                            <img src="./public/images/010.jpg" alt="News Image 1" class="w-full h-64 md:h-48 object-cover">
-                            <div class="mt-2">
-                                <h3 class="text-lg font-semibold text-blue-400">Thousands of Anti-Coup Protesters Continue to March</h3>
-                                <p class="text-sm text-gray-400">World - Jan 13, 2021</p>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -696,58 +597,72 @@
     <section class="container mx-auto py-6 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:px-0 px-5">
         <!-- left-->
         <div class="lg:col-span-2 space-y-6">
-            
+            <h2 class="text-xl lg:text-2xl font-bold font-sans mb-4">Technology</h2>
+
             <div class="relative overflow-hidden">
-                <img src="./public/images/4.jpg" alt="crypto" class="w-full object-cover aspect-[16/9] ">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent p-6 flex flex-col justify-end">
-                    <h2 class="lg:text-2xl  text-base font-semibold lg:font-bold text-white">Cryptographers Are Not Happy With How Using the Word 'Crypto'</h2>
-                    <p class="text-sm text-gray-300 mt-2">By Shane Doe — Jan 14, 2021</p>
-                </div>
+                <a class="group" href="#" >
+                    <img src="./public/images/4.jpg" alt="crypto" class="w-full object-cover aspect-[16/9] transform transition duration-300 ease-in-out group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent p-6 flex flex-col justify-end">
+                        <h2 class="lg:text-2xl  text-base font-semibold lg:font-bold text-white">Cryptographers Are Not Happy With How Using the Word 'Crypto'</h2>
+                        <p class="text-sm text-gray-300 mt-2">By Shane Doe — Jan 14, 2021</p>
+                    </div>
+                </a>
             </div>
-            <div class="flex lg:flex-row flex-col bg-white shadow  overflow-hidden ">
-                <div class="">
-                    <img src="./public/images/2.jpg" alt="drone" class="lg:aspect-[16/9] lg:pb-3">
+
+            <a href="#" class="flex lg:flex-row flex-col bg-white shadow overflow-hidden">
+                <div class="relative group overflow-hidden">
+                    <img src="./public/images/2.jpg" alt="drone" class="w-full lg:aspect-[16/9] object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-105" loading="lazy" >
+                    
                 </div>
-                <div class="p-4 w-2/3 flex flex-col gap-y-2 lg:gap-y-4">
+
+                <div class="p-4 w-full lg:w-2/3 flex flex-col gap-y-2 lg:gap-y-4">
                     <span class="text-blue-500">Gadgets</span>
                     <h2 class="text-lg font-semibold">How Many Motors Should a Drone Have? Drones Explained</h2>
                     <span class="text-sm text-gray-500 mt-2">By <span class="text-black">Shane Doe</span> — Jan 14, 2021</span>
                     <p class="text-gray-500 lg:block hidden">To understand the new politics stance and other pro nationals of recent times, we should…</p>
                 </div>
-            </div>
-            <div class="flex lg:flex-row flex-col bg-white shadow  overflow-hidden">
-                <div class="">
-                    <img src="./public/images/3.jpg" alt="drone" class="lg:aspect-[16/9] lg:pb-3">
+            </a>
+
+
+            <a href="#" class="flex lg:flex-row flex-col bg-white shadow overflow-hidden">
+                <div class="relative group overflow-hidden">
+                    <img src="./public/images/3.jpg" alt="drone" class="w-full lg:aspect-[16/9] object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-105" loading="lazy" >
+                    
                 </div>
-                <div class="p-4 w-2/3 flex flex-col gap-y-2 lg:gap-y-4">
+
+                <div class="p-4 w-full lg:w-2/3 flex flex-col gap-y-2 lg:gap-y-4">
                     <span class="text-blue-500">Gadgets</span>
                     <h2 class="text-lg font-semibold">How Many Motors Should a Drone Have? Drones Explained</h2>
                     <span class="text-sm text-gray-500 mt-2">By <span class="text-black">Shane Doe</span> — Jan 14, 2021</span>
                     <p class="text-gray-500 lg:block hidden">To understand the new politics stance and other pro nationals of recent times, we should…</p>
                 </div>
-            </div>
-            <div class="flex lg:flex-row flex-col bg-white shadow  overflow-hidden">
-                <div class="">
-                    <img src="./public/images/4.jpg" alt="drone" class="lg:aspect-[16/9] lg:pb-3">
+            </a>
+            <a href="#" class="flex lg:flex-row flex-col bg-white shadow overflow-hidden">
+                <div class="relative group overflow-hidden">
+                    <img src="./public/images/4.jpg" alt="drone" class="w-full lg:aspect-[16/9] object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-105" loading="lazy" >
+                    
                 </div>
-                <div class="p-4 w-2/3 flex flex-col gap-y-2 lg:gap-y-4">
+
+                <div class="p-4 w-full lg:w-2/3 flex flex-col gap-y-2 lg:gap-y-4">
                     <span class="text-blue-500">Gadgets</span>
                     <h2 class="text-lg font-semibold">How Many Motors Should a Drone Have? Drones Explained</h2>
                     <span class="text-sm text-gray-500 mt-2">By <span class="text-black">Shane Doe</span> — Jan 14, 2021</span>
                     <p class="text-gray-500 lg:block hidden">To understand the new politics stance and other pro nationals of recent times, we should…</p>
                 </div>
-            </div>
-            <div class="flex lg:flex-row flex-col bg-white overflow-hidden">
-                <div class="">
-                    <img src="./public/images/3.jpg" alt="drone" class="lg:aspect-[16/9] lg:pb-3">
+            </a>
+            <a href="#" class="flex lg:flex-row flex-col bg-white shadow overflow-hidden">
+                <div class="relative group overflow-hidden">
+                    <img src="./public/images/2.jpg" alt="drone" class="w-full lg:aspect-[16/9] object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-105" loading="lazy" >
+                    
                 </div>
-                <div class="p-4 w-2/3 flex flex-col gap-y-2 lg:gap-y-4">
+
+                <div class="p-4 w-full lg:w-2/3 flex flex-col gap-y-2 lg:gap-y-4">
                     <span class="text-blue-500">Gadgets</span>
                     <h2 class="text-lg font-semibold">How Many Motors Should a Drone Have? Drones Explained</h2>
                     <span class="text-sm text-gray-500 mt-2">By <span class="text-black">Shane Doe</span> — Jan 14, 2021</span>
                     <p class="text-gray-500 lg:block hidden">To understand the new politics stance and other pro nationals of recent times, we should…</p>
                 </div>
-            </div>
+            </a>
         </div>
 
         <!-- right-->
@@ -756,11 +671,11 @@
             
                 <!--  Covid19 -->
                 <div class="bg-white shadow  overflow-hidden">
-                    <h2 class="text-xl font-bold font-sans mb-4">Covid'19</h2>
+                    <h2 class="text-xl lg:text-2xl font-bold font-sans mb-4">Covid'19</h2>
                     
                     <div class="mb-4">
                         <img src="./public/images/02.jpg" class="w-full object-cover aspect-video" alt="Hand">
-                        <h3 class="mt-2 font-bold text-center px-1 text-2xl mb-4">‘Growing Safety Issue’: FDA Issues Warning About Hand Sanitizers</h3>
+                        <h3 class="mt-2 font-bold text-left px-1 text-2xl mb-4">‘Growing Safety Issue’: FDA Issues Warning About Hand Sanitizers</h3>
                         <p class="mb-5 text-sm text-gray-500"><span class="text-blue-400 pr-8 ">Covid'19</span>Jan 14, 2021</p>
                         <p class="text-gray-500">To understand the new politics stance and other pro nationals of recent times, we should…</p>
                     </div>
@@ -813,7 +728,7 @@
         <p class="text-xs sm:text-xl text-gray-300 mt-1 sm:mt-2 text-center">Get the latest creative news from FooBar about art, design and business.</p>
         <div class=" flex items-center justify-center mt-3 sm:mt-4 w-full max-w-3xl gap-x-2">
             <input type="email" class="w-8/12 p-2 bg-gray-800 text-gray-300 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your email address..." >
-            <button class=" w-4/12 bg-blue-500 text-white p-2  rounded-lg hover:bg-blue-600 transition duration-200">SUBSCRIBE</button>
+            <button class="cursor-pointer w-4/12 bg-blue-500 text-white p-2  rounded-lg hover:bg-blue-600 transition-colors duration-200">SUBSCRIBE</button>
         </div>
         <div class="flex items-center justify-center gap-x-2">
             <input class="lg:mt-[2px]" type="checkbox">
@@ -832,46 +747,92 @@
                 <h2 class="text-2xl font-bold mb-4">Top Stories</h2>
                 
                 <div class="grid sm:grid-cols-2 gap-4">
-                    <div class="space-y-2">
-                        <img src="./public/images/14.jpg" class="w-full h-auto rounded" alt="photo">
-                        <h2 class="font-semibold text-lg">Young Teen Sucker-punches Opponent During Basketball Game</h2>
+                    <a href="#" class="space-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="./public/images/14.jpg" class="w-full h-auto rounded transition duration-300" alt="photo">
+                            <div class="absolute inset-0 bg-white opacity-0 hover:opacity-20 transition duration-300 rounded"></div>
+                        </div>
+                        <h2 class="font-semibold text-lg">
+                            Young Teen Sucker-punches Opponent During Basketball Game
+                        </h2>
                         <p class="text-sm text-gray-600">Sports — Mar 12, 2021</p>
-                        <p class="text-gray-500 lg:block hidden">To understand the new politics stance and other pro nationals of recent times, we should…</p>
-                    </div>
-                    <div class="space-y-2">
-                        <img src="./public/images/14.jpg" class="w-full h-auto rounded" alt="">
-                        <h2 class="font-semibold text-lg">Fidelity Launches Canada's First Bitcoin Custody Service</h2>
-                        <p class="text-sm text-gray-600">Business — Jan 22, 2021</p>
-                        <p class="text-gray-500 lg:block hidden">To understand the new politics stance and other pro nationals of recent times, we should…</p>
-                    </div>
-                    <div class="space-y-2">
-                        <img src="./public/images/13.jpg" class="w-full h-auto rounded" alt="photo">
-                        <h2 class="font-semibold text-lg">Young Teen Sucker-punches Opponent During Basketball Game</h2>
+                        <p class="text-gray-500 lg:block hidden">
+                            To understand the new politics stance and other pro nationals of recent times, we should…
+                        </p>
+                    </a>
+
+                    <a href="#" class="space-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="./public/images/14.jpg" class="w-full h-auto rounded transition duration-300" alt="photo">
+                            <div class="absolute inset-0 bg-white opacity-0 hover:opacity-20 transition duration-300 rounded"></div>
+                        </div>
+                        <h2 class="font-semibold text-lg">
+                            Young Teen Sucker-punches Opponent During Basketball Game
+                        </h2>
                         <p class="text-sm text-gray-600">Sports — Mar 12, 2021</p>
-                        <p class="text-gray-500 lg:block hidden">To understand the new politics stance and other pro nationals of recent times, we should…</p>
-                    </div>
-                    <div class="space-y-2">
-                        <img src="./public/images/12.jpg" class="w-full h-auto rounded" alt="">
-                        <h2 class="font-semibold text-lg">Fidelity Launches Canada's First Bitcoin Custody Service</h2>
-                        <p class="text-sm text-gray-600">Business — Jan 22, 2021</p>
-                        <p class="text-gray-500 lg:block hidden">To understand the new politics stance and other pro nationals of recent times, we should…</p>
-                    </div>
-                    <div class="space-y-2">
-                        <img src="./public/images/14.jpg" class="w-full h-auto rounded" alt="photo">
-                        <h2 class="font-semibold text-lg">Young Teen Sucker-punches Opponent During Basketball Game</h2>
+                        <p class="text-gray-500 lg:block hidden">
+                            To understand the new politics stance and other pro nationals of recent times, we should…
+                        </p>
+                    </a>
+                    <a href="#" class="space-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="./public/images/13.jpg" class="w-full h-auto rounded transition duration-300" alt="photo">
+                            <div class="absolute inset-0 bg-white opacity-0 hover:opacity-20 transition duration-300 rounded"></div>
+                        </div>
+                        <h2 class="font-semibold text-lg">
+                            Young Teen Sucker-punches Opponent During Basketball Game
+                        </h2>
                         <p class="text-sm text-gray-600">Sports — Mar 12, 2021</p>
-                        <p class="text-gray-500 lg:block hidden">To understand the new politics stance and other pro nationals of recent times, we should…</p>
-                    </div>
-                    <div class="space-y-2">
-                        <img src="./public/images/14.jpg" class="w-full h-auto rounded" alt="">
-                        <h2 class="font-semibold text-lg">Fidelity Launches Canada's First Bitcoin Custody Service</h2>
-                        <p class="text-sm text-gray-600">Business — Jan 22, 2021</p>
-                        <p class="text-gray-500 lg:block hidden">To understand the new politics stance and other pro nationals of recent times, we should…</p>
-                    </div>
+                        <p class="text-gray-500 lg:block hidden">
+                            To understand the new politics stance and other pro nationals of recent times, we should…
+                        </p>
+                    </a>
+                    <a href="#" class="space-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="./public/images/13.jpg" class="w-full h-auto rounded transition duration-300" alt="photo">
+                            <div class="absolute inset-0 bg-white opacity-0 hover:opacity-20 transition duration-300 rounded"></div>
+                        </div>
+                        <h2 class="font-semibold text-lg">
+                            Young Teen Sucker-punches Opponent During Basketball Game
+                        </h2>
+                        <p class="text-sm text-gray-600">Sports — Mar 12, 2021</p>
+                        <p class="text-gray-500 lg:block hidden">
+                            To understand the new politics stance and other pro nationals of recent times, we should…
+                        </p>
+                    </a>
+                    <a href="#" class="space-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="./public/images/14.jpg" class="w-full h-auto rounded transition duration-300" alt="photo">
+                            <div class="absolute inset-0 bg-white opacity-0 hover:opacity-20 transition duration-300 rounded"></div>
+                        </div>
+                        <h2 class="font-semibold text-lg">
+                            Young Teen Sucker-punches Opponent During Basketball Game
+                        </h2>
+                        <p class="text-sm text-gray-600">Sports — Mar 12, 2021</p>
+                        <p class="text-gray-500 lg:block hidden">
+                            To understand the new politics stance and other pro nationals of recent times, we should…
+                        </p>
+                    </a>
+                    <a href="#" class="space-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="./public/images/14.jpg" class="w-full h-auto rounded transition duration-300" alt="photo">
+                            <div class="absolute inset-0 bg-white opacity-0 hover:opacity-20 transition duration-300 rounded"></div>
+                        </div>
+                        <h2 class="font-semibold text-lg">
+                            Young Teen Sucker-punches Opponent During Basketball Game
+                        </h2>
+                        <p class="text-sm text-gray-600">Sports — Mar 12, 2021</p>
+                        <p class="text-gray-500 lg:block hidden">
+                            To understand the new politics stance and other pro nationals of recent times, we should…
+                        </p>
+                    </a>
                 </div>
 
                 <div class="text-center pt-4">
-                    <button class="px-4 py-2 border-2 border-[#0987e8] text-[#0987e8] hover:bg-black hover:text-white hover:border-transparent transition-colors duration-500">Load More</button>
+                    <button class="px-4 py-2 border-2 border-[#0987e8] text-[#0987e8] hover:bg-black hover:text-white hover:border-transparent transition-colors duration-500">
+                        Load More 
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
                 </div>
 
             </div>
@@ -880,24 +841,65 @@
             <div class="space-y-6">
                 <!-- Follow Us -->
                 <div class="lg:sticky lg:top-8 space-y-6">
-                    <h2 class="text-2xl font-bold mb-4">Follow Us</h2>
-                        <div class="grid grid-cols-2 gap-3">
-                        <a href="#" class="flex items-center justify-center space-x-2 bg-[#3b5998] text-white font-medium py-2 rounded">
-                            <span>👍</span>
-                            <span>1.1K Facebook</span>
-                        </a>
-                        <a href="#" class="flex items-center justify-center space-x-2 bg-[#1DA1F2] text-white font-medium py-2 rounded">
-                            <span>𝕏</span>
-                            <span>68.9K Twitter</span>
-                        </a>
-                        <a href="#" class="flex items-center justify-center space-x-2 bg-[#E60023] text-white font-medium py-2 rounded">
-                            <span>📌</span>
-                            <span>10.7K Pinterest</span>
-                        </a>
-                        <a href="#" class="flex items-center justify-center space-x-2 bg-[#C13584] text-white font-medium py-2 rounded">
-                            <span>📸</span>
-                            <span>46.4K Instagram</span>
-                        </a>
+                        <h2 class="text-2xl font-bold mb-4">Follow Us</h2>
+                        <div class="grid grid-cols-2 gap-2">
+
+
+                            <a href="#" class="bg-blue-600 text-white font-semibold overflow-hidden rounded lg:w-48">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center justify-center bg-blue-700 px-2 py-2">
+                                        <i class="fa-brands fa-facebook text-lg"></i>
+                                    </div>
+                                    <span>Facebook</span>
+                                    <span class="pr-3">1.1K</span>
+                                </div>
+                            </a>
+
+                            <a href="#" class="bg-blue-400 text-white font-semibold overflow-hidden rounded lg:w-48">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center justify-center bg-blue-500 px-2 py-2">
+                                        <i class="fa-brands fa-twitter text-lg"></i>
+                                    </div>
+                                    <span>twitter</span>
+                                    <span class="pr-3">1.1K</span>
+                                </div>
+                            </a>
+                            <a href="#" class="bg-red-600 text-white font-semibold overflow-hidden rounded lg:w-48">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center justify-center bg-red-700 px-2 py-2">
+                                        <i class="fa-brands fa-instagram text-lg"></i>
+                                    </div>
+                                    <span>instagram</span>
+                                    <span class="pr-3">1.1K</span>
+                                </div>
+                            </a>
+                            <a href="#" class="bg-pink-600 text-white font-semibold overflow-hidden rounded lg:w-48">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center justify-center bg-pink-700 px-2 py-2">
+                                        <i class="fa-brands fa-pinterest text-lg"></i>
+                                    </div>
+                                    <span>pinterest</span>
+                                    <span class="pr-3">1.1K</span>
+                                </div>
+                            </a>
+                            <a href="#" class="bg-red-500 text-white font-semibold overflow-hidden rounded lg:w-48">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center justify-center bg-red-600 px-2 py-2">
+                                        <i class="fa-brands fa-vimeo-v text-lg"></i>
+                                    </div>
+                                    <span>vimeo-v</span>
+                                    <span class="pr-3">1.1K</span>
+                                </div>
+                            </a>
+                            <a href="#" class="bg-sky-500 text-white font-semibold overflow-hidden rounded lg:w-48">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center justify-center bg-sky-600 px-2 py-2">
+                                        <i class="fa-brands fa-youtube text-lg"></i>
+                                    </div>
+                                    <span>youtube</span>
+                                    <span class="pr-3">1.1K</span>
+                                </div>
+                            </a>
                         </div>
 
                         <!-- Trending Now -->
@@ -905,37 +907,37 @@
                             <h2 class="text-2xl font-bold mb-4">Trending Now</h2>
                             <div class="space-y-4">
                                 <!-- Item 1 -->
-                                <div class="flex items-start space-x-3">
-                                    <img src="./public/images/21.jpg" alt="" class="w-20 h-14 object-cover rounded">
+                                <a href="#" class="flex items-start space-x-3">
+                                    <img src="./public/images/21.jpg" alt="" class="w-[110px] aspect-[16/12] object-cover rounded">
                                     <div class="flex-1">
                                         <p class="font-bold text-base  leading-snug">Covid-Resistant People Inspire New...</p>
                                         <span class="text-xs text-gray-500">Jan 14, 2021</span>
                                     </div>
-                                </div>
+                                </a>
                                 <!-- Item 2 -->
-                                <div class="flex items-start space-x-3">
-                                    <img src="./public/images/22.jpg" alt="" class="w-20 h-14 object-cover rounded">
+                                <a href="#" class="flex items-start space-x-3">
+                                    <img src="./public/images/22.jpg" alt="" class="w-[110px] aspect-[16/12] object-cover rounded">
                                     <div class="flex-1">
-                                    <p class="font-medium text-sm leading-snug">The Fastest Cars You Must Use In The Game</p>
+                                    <p class="font-bold text-sm leading-snug">The Fastest Cars You Must Use In The Game</p>
                                     <span class="text-xs text-gray-500">Jan 14, 2021</span>
                                     </div>
-                                </div>
+                                </a>
                                 <!-- Item 3 -->
-                                <div class="flex items-start space-x-3">
-                                    <img src="./public/images/21.jpg" alt="" class="w-20 h-14 object-cover rounded">
+                                <a href="#" class="flex items-start space-x-3">
+                                    <img src="./public/images/21.jpg" alt="" class="w-[110px] aspect-[16/12] object-cover rounded">
                                     <div class="flex-1">
-                                    <p class="font-medium text-sm leading-snug">Boss Calls for Basketball Time-Out...</p>
+                                    <p class="font-bold text-sm leading-snug">Boss Calls for Basketball Time-Out...</p>
                                     <span class="text-xs text-gray-500">Jan 14, 2021</span>
                                     </div>
-                                </div>
+                                </a>
                                 <!-- Item 4 -->
-                                <div class="flex items-start space-x-3">
-                                    <img src="./public/images/22.jpg" alt="" class="w-20 h-14 object-cover rounded">
+                                <a href="#" class="flex items-start space-x-3">
+                                    <img src="./public/images/22.jpg" alt="" class="w-[110px] aspect-[16/12] object-cover rounded">
                                     <div class="flex-1">
-                                    <p class="font-medium text-sm leading-snug">Police Department Saved Newest K-9...</p>
+                                    <p class="font-bold text-sm leading-snug">Police Department Saved Newest K-9...</p>
                                     <span class="text-xs text-gray-500">Jan 14, 2021</span>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                 </div>
@@ -949,143 +951,113 @@
 
     <!-- footer -->
     <footer class="bg-[#0f0f11] text-gray-100 ">
-        <div class="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
-            
-            <!-- column 1 -->
+    <div class="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- column 1 -->
+        <div class="space-y-4">
+            <h3 class="text-xl lg:text-2xl font-bold pb-2 border-b border-[#2e2e2f]">About Us</h3>
+            <div class="flex items-center space-x-1 text-3xl font-bold">
+                <span>Newsline</span>
+                <span class="bg-blue-500 text-white px-2 rounded">365</span>
+            </div>
+            <p class="text-sm leading-relaxed lg:w-5/6">
+                Your source for the lifestyle news. This demo is crafted specifically
+                to exhibit the use of the theme as a lifestyle site. Visit our main page
+                for more demos.  
+            </p>
+            <p class="text-sm">We’re accepting new partnerships right now.</p>
+            <p class="text-sm mt-2">Email: info@example.com</p>
+            <p class="text-sm">Contact: +1-320-0123-451</p>
+            <ul class="flex gap-3 mt-3">
+                <li>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-blue-500">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-blue-500">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-blue-500">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-blue-500">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- column 2 -->
+        <div>
+            <h3 class="text-xl lg:text-2xl font-bold pb-2 border-b border-[#2e2e2f] mb-4">Our Picks</h3>
             <div class="space-y-4">
-                <h3 class="text-xl lg:text-2xl font-bold pb-2 border-b border-[#2e2e2f]">About Us</h3>
-                <div class="flex items-center space-x-1 text-3xl font-bold">
-                    <span>Newsline</span>
-                    <span class="bg-blue-500 text-white px-2 rounded">365</span>
-                </div>
-                <p class="text-sm leading-relaxed lg:w-5/6">
-                    Your source for the lifestyle news. This demo is crafted specifically
-                    to exhibit the use of the theme as a lifestyle site. Visit our main page
-                    for more demos.  
-                </p>
-                <p class="text-sm">We’re accepting new partnerships right now.</p>
-                <p class="text-sm mt-2">Email: info@example.com</p>
-                <p class="text-sm">Contact: +1-320-0123-451</p>
-                <ul class="flex gap-3 mt-3">
-                    <li>
-                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-blue-500">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-blue-500">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-blue-500">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-blue-500">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- column 2 -->
-            <div>
-                <h3 class="text-xl lg:text-2xl font-bold pb-2 border-b border-[#2e2e2f] mb-4">Our Picks</h3>
-                <div class="space-y-4">
-                    <div class="flex gap-3 border-b border-gray-700 pb-3">
-                        <img src="./public/images/14.jpg" class="aspect-[16/11] w-[110px]" alt="images">
-                        <div>
-                            <p class="w-5/6 mb-1 text-sm font-bold">Young Teen Sucker-punches Opponent</p>
-                            <span class="text-xs text-gray-400">Mar 12, 2021</span>
-                        </div>
+                <a href="#" class="flex gap-3 border-b border-gray-700 pb-3 hover:text-blue-400 transition-colors duration-300">
+                    <img src="../../public/images/14.jpg" class="aspect-[16/11] w-[110px]" alt="images">
+                    <div>
+                        <p class="w-5/6 mb-1 text-sm font-bold ">Young Teen Sucker-punches Opponent</p>
+                        <span class="text-xs text-gray-400">Mar 12, 2021</span>
                     </div>
-                    <div class="flex gap-3 border-b border-gray-700 pb-3">
-                        <img src="./public/images/12.jpg" class="aspect-[16/11] w-[110px]" alt="images">
-                        <div>
-                            <p class="w-5/6 mb-1 text-sm font-bold">Fidelity Launches Canada’s First Bitcoin Custody Service</p>
-                            <span class="text-xs text-gray-400">Jan 22, 2021</span>
-                        </div>
+                </a>
+                <a href="#" class="flex gap-3 border-b border-gray-700 pb-3 hover:text-blue-400 transition-colors duration-300">
+                    <img src="../../public/images/12.jpg" class="aspect-[16/11] w-[110px]" alt="images">
+                    <div>
+                        <p class="w-5/6 mb-1 text-sm font-bold ">Fidelity Launches Canada’s First Bitcoin Custody Service</p>
+                        <span class="text-xs text-gray-400">Jan 22, 2021</span>
                     </div>
-                    <div class="flex gap-3 border-b border-gray-700 pb-3">
-                        <img src="./public/images/13.jpg" class="aspect-[16/11] w-[110px]" alt="images">
-                        <div>
-                            <p class="w-5/6 mb-1 text-sm font-bold">At White House, Frustration Over Who Gets to Ask Questions</p>
-                            <span class="text-xs text-gray-400">Jan 22, 2021</span>
-                        </div>
+                </a>
+                <a href="#" class="flex gap-3 border-b border-gray-700 pb-3 hover:text-blue-400 transition-colors duration-300">
+                    <img src="../../public/images/13.jpg" class="aspect-[16/11] w-[110px]" alt="images">
+                    <div>
+                        <p class="w-5/6 mb-1 text-sm font-bold ">At White House, Frustration Over Who Gets to Ask Questions</p>
+                        <span class="text-xs text-gray-400">Jan 22, 2021</span>
                     </div>
-                </div>
-            </div>
-
-            <!-- column 3 -->
-            <aside class="lg:sticky lg:top-6 h-fit">
-                <h3 class="text-xl lg:text-2xl font-bold pb-2 border-b border-[#2e2e2f] mb-4">New Comments</h3>
-                <!-- <ul class="space-y-3 text-sm">
-                    <li><span class="font-bold text-blue-400">Jane Doe</span> on Mirrorless or DSLR: Which is Best for Photography?</li>
-                    <li><span class="font-bold text-blue-400">Jane Doe</span> on New Marvel’s Avengers MCU Suit Surprises Fans</li>
-                    <li><span class="font-bold text-blue-400">Jane Doe</span> on Pfizer Signs $5.3 Billion US Deal to Supply Covid-19 Antiviral Pills</li>
-                    <li><span class="font-bold text-blue-400">Jane Doe</span> on Cryptocurrencies Can Destabilize Nations, Hillary Clinton Warns</li>
-                </ul> -->
-                <div class="text-white px-4 pt-2 border-b border-gray-700 max-w-md">
-
-                    <p class="text-xs text-blue-500 font-semibold mb-3">
-                        JANE DOE <span class="text-gray-400">on</span>
-                    </p>
-                    
-                    <h2 class="mt-1 mb-3 text-sm font-semibold w-3/4 ">
-                        Mirrorless or DSLR: Which is Best for Photography?
-                    </h2>
-                </div>
-
-                <div class="text-white px-4 pt-2 border-b border-gray-700 max-w-md">
-
-                    <p class="text-xs text-blue-500 font-semibold mb-3">
-                        JANE DOE <span class="text-gray-400">on</span>
-                    </p>
-                    
-                    <h2 class="mt-1 mb-3 text-sm font-semibold w-3/4 ">
-                        Mirrorless or DSLR: Which is Best for Photography?
-                    </h2>
-                </div>
-                <div class="text-white px-4 pt-2 border-b border-gray-700 max-w-md">
-
-                    <p class="text-xs text-blue-500 font-semibold mb-3">
-                        JANE DOE <span class="text-gray-400">on</span>
-                    </p>
-                    
-                    <h2 class="mt-1 mb-3 text-sm font-semibold w-3/4 ">
-                        Mirrorless or DSLR: Which is Best for Photography?
-                    </h2>
-                </div>
-                <div class="text-white px-4 pt-2 border-b border-gray-700 max-w-md">
-
-                    <p class="text-xs text-blue-500 font-semibold mb-3">
-                        JANE DOE <span class="text-gray-400">on</span>
-                    </p>
-                    
-                    <h2 class="mt-1 mb-3 text-sm font-semibold w-3/4 ">
-                        Mirrorless or DSLR: Which is Best for Photography?
-                    </h2>
-                </div>
-            </aside>
-
-        </div>
-        <div class=" bg-black pb-5">
-            <div class="container mx-auto flex flex-col-reverse lg:flex-row justify-between items-center">
-                <div class="text-center text-xs text-gray-500 py-6 ">
-                    © 2025 ThemeSphere. Designed by ThemeSphere.
-                </div>
-                <ul class="flex  gap-x-4">
-                    <li><a class="border-r pr-3 h-3 border-gray-700" href="#">Home</a></li>
-                    <li><a class="border-r pr-3 border-gray-700" href="#">Health</a></li>
-                    <li><a class="border-r pr-3 border-gray-700" href="#">About</a></li>
-                    <li><a class="border-r pr-3 border-gray-700" href="#">Contact</a></li>
-                </ul>
+                </a>
             </div>
         </div>
+
+        <!-- column 3 -->
+        <aside class="lg:sticky lg:top-6 h-fit">
+            <h3 class="text-xl lg:text-2xl font-bold pb-2 border-b border-[#2e2e2f] mb-4">New Comments</h3>
+
+            <a href="#" class="block text-white px-4 pt-2 border-b border-gray-700 max-w-md group hover:bg-gray-800 transition-transform duration-300 ease-in-out">
+                <p class="text-xs text-blue-500 font-semibold mb-3">JANE DOE <span class="text-gray-400">on</span></p>
+                <h2 class="mt-1 mb-3 text-sm font-semibold w-3/4  transition-transform duration-300 ease-in-out   group-hover:scale-105"> Mirrorless or DSLR: Which is Best for Photography? </h2>
+            </a>
+            <a href="#" class="block text-white px-4 pt-2 border-b border-gray-700 max-w-md group hover:bg-gray-800 transition-transform duration-300 ease-in-out">
+                <p class="text-xs text-blue-500 font-semibold mb-3">JANE DOE <span class="text-gray-400">on</span></p>
+                <h2 class="mt-1 mb-3 text-sm font-semibold w-3/4  transition-transform duration-300 ease-in-out   group-hover:scale-105"> Mirrorless or DSLR: Which is Best for Photography? </h2>
+            </a>
+            <a href="#" class="block text-white px-4 pt-2 border-b border-gray-700 max-w-md group hover:bg-gray-800 transition-transform duration-300 ease-in-out">
+                <p class="text-xs text-blue-500 font-semibold mb-3">JANE DOE <span class="text-gray-400">on</span></p>
+                <h2 class="mt-1 mb-3 text-sm font-semibold w-3/4  transition-transform duration-300 ease-in-out   group-hover:scale-105"> Mirrorless or DSLR: Which is Best for Photography? </h2>
+            </a>
+            <a href="#" class="block text-white px-4 pt-2 border-b border-gray-700 max-w-md group hover:bg-gray-800 transition-transform duration-300 ease-in-out">
+                <p class="text-xs text-blue-500 font-semibold mb-3">JANE DOE <span class="text-gray-400">on</span></p>
+                <h2 class="mt-1 mb-3 text-sm font-semibold w-3/4  transition-transform duration-300 ease-in-out   group-hover:scale-105"> Mirrorless or DSLR: Which is Best for Photography? </h2>
+            </a>
+        </aside>
+    </div>
+    
+    <div class=" bg-black ">
+        <div class="container mx-auto flex flex-col-reverse lg:flex-row justify-between items-center">
+            <div class="text-center text-xs text-gray-500 py-6 ">
+                <i class="fa-regular fa-copyright"></i>
+                2025 ThemeSphere. Designed by ThemeSphere.
+            </div>
+            <ul class="flex  gap-x-4">
+                <li><a class="border-r pr-3 h-3 border-gray-700" href="#">Home</a></li>
+                <li><a class="border-r pr-3 border-gray-700" href="#">Health</a></li>
+                <li><a class="border-r pr-3 border-gray-700" href="#">About</a></li>
+                <li><a class="border-r pr-3 border-gray-700" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     </footer>
-
 
     <script type="module" src="/src/main.js"></script>
   </body>

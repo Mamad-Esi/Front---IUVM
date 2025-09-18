@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="font-sans" >
+
+    <header class="mx-auto container">
+
+        <!-- Top blue bar (Desktop only) -->
+        <div class="hidden md:flex bg-gradient-to-r from-blue-600 to-blue-800 text-white text-sm px-6 py-2 justify-between items-center">
+            <div class="flex space-x-6">
+                <a href="#" class="hover:underline">Start Here</a>
+                <a href="#" class="hover:underline">Demos</a>
+                <a href="#" class="hover:underline">Contact</a>
+                <a href="#" class="hover:underline">Buy Now</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-300">F</a>
+                <a href="#" class="hover:text-gray-300">X</a>
+                <a href="#" class="hover:text-gray-300">IG</a>
+            </div>
+        </div>
+
+        <!-- Logo + Banner -->
+        <div class="hidden md:flex justify-between items-center px-6 py-6">
+
+            <!-- Logo -->
+            <div class="flex items-center space-x-1 text-3xl font-bold">
+                <span>Newsline</span>
+                <span class="bg-blue-500 text-white px-2 rounded">365</span>
+            </div>
+
+            <!-- Banner -->
+            <a  href="#">
+                <img class="aspect-[16/2] w-[728px]" src="../../public/images/41.jpg" alt="photo">
+            </a>
+
+        </div>
+
+        <!-- Navbar -->
+        <nav class="bg-black text-white px-6">
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex justify-between items-center py-3">
+                
+                
+                <ul class="flex items-center justify-center space-x-8 font-semibold">
+                    <button class=" text-blue-400 text-2xl">☰</button>
+                    <li><a href="#" class="">Home</a></li>
+                    <ul data-twe-navbar-nav-ref>
+                        <li class=" static" data-twe-nav-item-ref data-twe-dropdown-ref>
+                        <a class="flex items-center whitespace-nowrap py-2 pe-2  transition duration-200 hover:ease-in-out "
+                            href="#" type="button" id="dropdownMenuButtonX" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-nav-link-ref >
+                        Health ▾
+                        </a>
+                        <div class="absolute !top-2 !right-0 !left-0 z-[1000] mt-0 hidden  border-none bg-white data-[twe-dropdown-show]:block "
+                            aria-labelledby="dropdownMenuButtonX" data-twe-dropdown-menu-ref>
+
+                            <div class="container mx-auto bg-black text-white p-6 w-full">
+                                <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+
+                                    <!-- Card 1 -->
+                                    <a href="#" class="space-y-2">
+                                        <img src="./public/images/001.jpg" alt="" class="w-full h-40 object-cover rounded">
+                                        <h3 class="font-bold text-lg hover:text-blue-400 transition-colors duration-300">Blood Proteomic Survey in Undiagnosed Population with COVID-19</h3>
+                                        <p class="text-gray-400 text-sm ">Jan 19, 2021</p>
+                                    </a>
+
+                                    <!-- Card 2 -->
+                                    <a href="#" class="space-y-2">
+                                        <img src="./public/images/001.jpg" alt="" class="w-full h-40 object-cover rounded">
+                                        <h3 class="font-bold text-lg hover:text-blue-400 transition-colors duration-300">Blood Proteomic Survey in Undiagnosed Population with COVID-19</h3>
+                                        <p class="text-gray-400 text-sm ">Jan 19, 2021</p>
+                                    </a>
+
+                                    <!-- Card 3 -->
+                                    <a href="#" class="space-y-2">
+                                        <img src="./public/images/001.jpg" alt="" class="w-full h-40 object-cover rounded">
+                                        <h3 class="font-bold text-lg hover:text-blue-400 transition-colors duration-300">Blood Proteomic Survey in Undiagnosed Population with COVID-19</h3>
+                                        <p class="text-gray-400 text-sm ">Jan 19, 2021</p>
+                                    </a>
+
+                                    <!-- Card 4 -->
+                                    <a href="#" class="space-y-2">
+                                        <img src="./public/images/001.jpg" alt="" class="w-full h-40 object-cover rounded">
+                                        <h3 class="font-bold text-lg hover:text-blue-400 transition-colors duration-300">Blood Proteomic Survey in Undiagnosed Population with COVID-19</h3>
+                                        <p class="text-gray-400 text-sm ">Jan 19, 2021</p>
+                                    </a>
+
+                                    <!-- Card 5 (with rating) -->
+                                    <a href="#" class="space-y-2">
+                                        <img src="./public/images/001.jpg" alt="" class="w-full h-40 object-cover rounded">
+                                        <h3 class="font-bold text-lg hover:text-blue-400 transition-colors duration-300">Blood Proteomic Survey in Undiagnosed Population with COVID-19</h3>
+                                        <p class="text-gray-400 text-sm ">Jan 19, 2021</p>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        </li>
+                    </ul>
+
+                    <li><a href="#" class="">World ▾</a></li>
+                    <li><a href="#" class="">Sports</a></li>
+
+
+                    <ul data-twe-navbar-nav-ref>
+                        <li class=" static" data-twe-nav-item-ref data-twe-dropdown-ref>
+                        <a class="flex items-center whitespace-nowrap py-2 pe-2  transition duration-200 hover:ease-in-out "
+                            href="#" type="button" id="dropdownMenuButtonX" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-nav-link-ref >
+                        Features ▾
+                        </a>
+                        <div class="absolute !top-2 !right-0 !left-0 z-[1000] mt-0 hidden data-[twe-dropdown-show]:block "
+                            aria-labelledby="dropdownMenuButtonX" data-twe-dropdown-menu-ref>
+                            <div class="container mx-auto bg-black text-white px-6 py-5 lg:px-8">
+                                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                                    <div>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full  bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    </div>
+
+                                    <div>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full  bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    </div>
+                                    <div>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full  bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    </div>
+                                    <div>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full border-b border-neutral-100 bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                        <a href="#!" aria-current="true" class="block w-full  bg-black text-white px-6 py-2 hover:text-blue-400 duration-300 transition-colors">Lorem ipsum</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        </li>
+                    </ul>
+
+                    <div class="overflow-hidden hover:bg-transparent group">
+                        <a href="#" class="flex items-center justify-center gap-x-[5px] group">
+                            <p class="">Technology</p>
+                        </a>
+                        <div class="container mx-auto hidden absolute !z-50 top-[210px] right-0 left-0 shadow-md bg-black w-full group-hover:block py-3">
+                            
+                            <span class="group/submenu">
+                            <a class="text-white text-sm p-5 font-bold font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">
+                                Vitamins, Minerals and Nutrients
+                            </a>
+                            <div class="container mx-auto hidden absolute top-[45px] border border-b right-0 left-0 shadow-md bg-black w-full group-hover/submenu:block py-3">
+                                <div class="grid grid-flow-col grid-rows-5 gap-3 p-5">
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                </div>
+                            </div>
+                            </span>
+
+                            <span class="group/submenu1">
+                            <a class="text-white text-sm p-5 font-bold font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Weight Management & Healthy Diet</a>
+                            <div class="container mx-auto hidden absolute top-[45px] border border-b right-0 left-0 shadow-md bg-black w-full group-hover/submenu1:block py-3">
+                            <div class="grid grid-flow-col grid-rows-5 gap-3 p-5">
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                </div>
+                            </div>
+                            </span>
+
+                            <span class="group/submenu2">
+                            <a class="text-white text-sm p-5 font-bold font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Herbal Supplements & Tea</a>
+                            <div class="container mx-auto hidden absolute top-[45px] border border-b right-0 left-0 shadow-md bg-black w-full group-hover/submenu2:block py-3">
+                                <div class="grid grid-flow-col grid-rows-5 gap-3 p-5">
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                </div>
+                            </div>
+                            </span>
+
+                            <span class="group/submenu3">
+                            <a class="text-white text-sm p-5 font-bold font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Beauty Supplements</a>
+                            <div class="container mx-auto hidden absolute top-[45px] border border-b right-0 left-0 shadow-md bg-black w-full group-hover/submenu3:block py-3">
+                            <div class="grid grid-flow-col grid-rows-5 gap-3 p-5">
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                </div>
+                            </div>
+                            </span>
+
+                            <span class="group/submenu4">
+                            <a class="text-white text-sm p-5 font-bold font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Addiction Treatment</a>
+                            <div class="container mx-auto hidden absolute top-[45px] border border-b right-0 left-0 shadow-md bg-black w-full group-hover/submenu4:block py-3">
+                            <div class="grid grid-flow-col grid-rows-5 gap-3 p-5">
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#company">Tinted Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#team">Sunscreen Spray</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Sunscreen Cream</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">Kids Sunscreen</a>
+                                <a class="text-white text-sm block font-YekanBakh hover:text-blue-400 transition-colors duration-300" href="#careers">After Sun</a>
+                                </div>
+                            </div>
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <li><a href="#" class="">Buy Theme</a></li>
+                </ul>
+
+                <div class="flex lg:hidden items-center space-x-1 text-xl font-bold">
+                    <span>Newsline</span>
+                    <span class="bg-blue-500 text-white px-1 rounded">365</span>
+                </div>
+
+                <div class="flex space-x-4 items-center">
+                    <button class="hidden md:block">🌙</button>
+                    <button>🔍</button>
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="lg:hidden flex items-center justify-between">
+                <button id="openBtn" class="text-blue-600 text-2xl p-2 transition duration-300 ease-in-out">
+                        <i class="fa-solid fa-bars"></i> 
+                </button>
+
+                <!-- overlay -->
+                <div id="overlay" class="fixed inset-0 w-full bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"></div>
+
+                <!-- offcanvas -->
+                <div id="offcanvas" class="fixed top-0 right-0 h-full w-full bg-black shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
+                    <div class="flex items-center justify-between p-4 border-b">
+                        <div class="flex lg:hidden items-center space-x-1 text-xl font-bold">
+                            <span>Newsline</span>
+                            <span class="bg-blue-500 text-white px-1 rounded">365</span>
+                        </div>
+
+                        <button id="closeBtn" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="p-4 overflow-y-auto h-auto w-full text-black">
+                        <ul class="flex flex-col text-white space-y-5 mt-5">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Archive</li>
+                        </ul>
+                    </div>
+
+                    <!-- INPUT -->
+                    <div class="mx-4 border border-gray-500 bg-black  p-4 sm:p-6 flex flex-col items-center justify-center gap-y-4 mt-16">
+                        <h2 class="text-2xl sm:text-5xl mb-5 font-bold text-gray-300">Join our mailing list</h2>
+                        <p class="text-xs sm:text-xl text-gray-300 mt-1 sm:mt-2 text-center">Get the latest creative news from FooBar about art, design and business.</p>
+                        <div class=" flex items-center justify-center mt-3 sm:mt-4 w-full max-w-3xl gap-x-2">
+                            <input type="email" class="w-8/12 p-2 bg-gray-800 text-gray-300 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your email address..." >
+                            <button class=" w-4/12 bg-blue-500 text-white p-2  rounded-lg hover:bg-blue-600 transition duration-200">SUBSCRIBE</button>
+                        </div>
+                        <div class="flex items-center justify-center gap-x-2">
+                            <input class="lg:mt-[2px]" type="checkbox">
+                            <p class="text-xs sm:text-sm text-gray-400 mt-3 lg:mt-0 text-center">By signing up, you agree to the our terms and our Privacy Policy agreement.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex lg:hidden items-center space-x-1 text-xl font-bold">
+                    <span>Newsline</span>
+                    <span class="bg-blue-500 text-white px-1 rounded">365</span>
+                </div>
+
+                <div class="flex space-x-4 items-center">
+                    <button class="hidden md:block">🌙</button>
+                    <button>🔍</button>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
