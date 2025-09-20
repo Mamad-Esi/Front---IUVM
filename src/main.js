@@ -32,6 +32,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 import {
+  Modal,
   Collapse,
   Offcanvas,
   Dropdown,
@@ -39,32 +40,7 @@ import {
   initTWE,
 } from "tw-elements";
 
-initTWE({ Collapse, Offcanvas, Dropdown, Ripple });
-
-
-
-// const pagination = document.getElementById('pagination');
-// const links = pagination.querySelectorAll('.page-link');
-
-// links.forEach(link => {
-//   link.addEventListener('click', function(event) {
-//     event.preventDefault();
-
-//     links.forEach(l => {
-//       l.classList.remove('bg-blue-600', 'text-white');
-//       l.classList.add('bg-white', 'text-gray-700');
-//       l.classList.remove('hover:bg-blue-700');
-//       l.classList.add('hover:bg-gray-100');
-//       l.removeAttribute('aria-current');
-//     });
-
-//     this.classList.add('bg-blue-600', 'text-white');
-//     this.classList.remove('bg-white', 'text-gray-700');
-//     this.classList.remove('hover:bg-gray-100');
-//     this.classList.add('hover:bg-blue-700');
-//     this.setAttribute('aria-current', 'page');
-//   });
-// });
+initTWE({ Modal, Collapse, Offcanvas, Dropdown, Ripple });
 
 
 
@@ -121,3 +97,30 @@ if (window.scrollY > 50) {
   );
 }
 });
+
+
+
+  const modal = document.getElementById("modal");
+  const modalOpen = document.getElementById("modal-open");
+  const modalClose = document.getElementById("modal-close");
+  const modalCancel = document.getElementById("modal-cancel");
+
+  // Open modal
+  modalOpen.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+  });
+
+  // Close modal (X button + footer close)
+  modalClose.addEventListener("click", () => {
+    modal.classList.add("hidden");
+  });
+  modalCancel.addEventListener("click", () => {
+    modal.classList.add("hidden");
+  });
+
+  // Close when clicking outside modal content
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+    }
+  });
